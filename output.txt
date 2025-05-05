@@ -1,0 +1,52 @@
+INFO     [telemetry] Anonymized telemetry enabled. See https://docs.browser-use.com/development/telemetry for more information.
+/Users/arunannaldas/Documents/Learning/AgenticAI/proj_agenticAI-agenticinitialCommit/agentCreation.py:13: LangChainDeprecationWarning: Importing get_openai_callback from /Users/arunannaldas/anaconda3/lib/python3.11/site-packages/langchain/callbacks/__init__.py is deprecated. Please replace deprecated imports:
+
+>> from /Users/arunannaldas/anaconda3/lib/python3.11/site-packages/langchain/callbacks/__init__.py import get_openai_callback
+
+with new imports of:
+
+>> from langchain_community.callbacks.manager import get_openai_callback
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+  from langchain.callbacks import get_openai_callback
+INFO     [root] API key loaded
+INFO     [root] LLM initialized
+INFO     [agent] 🧠 Starting an agent with main_model=models/gemini-2.0-flash +vision +memory, planner_model=None, extraction_model=None 
+WARNING  [agent] ⚠️ Agent(enable_memory=True) is set but missing some required packages, install and re-run to use memory features: pip install browser-use[memory]
+INFO     [root] Agent created
+INFO     [agent] 🚀 Starting task: Launch Google.com
+Enter text as jpmorgan
+INFO     [agent] 📍 Step 1
+INFO     [agent] 🤷 Eval: Unknown - I just started the task, so I don't know if the previous goal was successful.
+INFO     [agent] 🧠 Memory: I need to launch Google.com and enter text as jpmorgan.
+INFO     [agent] 🎯 Next goal: Launch Google.com
+INFO     [agent] 🛠️  Action 1/1: {"go_to_url":{"url":"https://www.google.com"}}
+INFO     [controller] 🔗  Navigated to https://www.google.com
+INFO     [agent] 📍 Step 2
+INFO     [agent] 👍 Eval: Success - I successfully launched Google.com.
+INFO     [agent] 🧠 Memory: I need to launch Google.com and enter text as jpmorgan.
+INFO     [agent] 🎯 Next goal: Enter text as jpmorgan
+INFO     [agent] 🛠️  Action 1/1: {"input_text":{"index":4,"text":"jpmorgan"}}
+INFO     [controller] ⌨️  Input jpmorgan into index 4
+INFO     [agent] 📍 Step 3
+INFO     [agent] 👍 Eval: Success - I successfully entered text as jpmorgan.
+INFO     [agent] 🧠 Memory: I need to launch Google.com and enter text as jpmorgan.
+INFO     [agent] 🎯 Next goal: Click Google Search button
+INFO     [agent] 🛠️  Action 1/1: {"click_element_by_index":{"index":18}}
+INFO     [controller] 🖱️  Clicked button with index 18: 
+INFO     [agent] 📍 Step 4
+INFO     [agent] 👍 Eval: Success - I successfully clicked on the Google Search button.
+INFO     [agent] 🧠 Memory: I needed to launch Google.com and enter text as jpmorgan. I have completed the task.
+INFO     [agent] 🎯 Next goal: Complete the task
+INFO     [agent] 🛠️  Action 1/1: {"done":{"success":true,"data":{"launchedBrowser":"chrome","title":"Launched Google.com and entered text as jpmorgan.","titleValidation":"true","status":"finished","numberOfActions":"3","NumberOfFileorTest":"0","message":"Successfully launched Google.com and entered text as jpmorgan.","sucess":"true"}}}
+INFO     [agent] 📄 Result: {"launchedBrowser": "chrome", "title": "Launched Google.com and entered text as jpmorgan.", "titleValidation": "true", "status": "finished", "numberOfActions": "3", "NumberOfFileorTest": "0", "message": "Successfully launched Google.com and entered text as jpmorgan.", "sucess": "true"}
+INFO     [agent] ✅ Task completed
+INFO     [agent] ✅ Successfully
+INFO     [agent] 📝 Total input tokens used (approximate): 15677
+INFO     [numexpr.utils] NumExpr defaulting to 8 threads.
+INFO     [root] Agent run completed
+HTML report generated: result.html
+
+📊 Token Usage Estimate:
+Prompt Tokens: 40
+Response Tokens: 286
+Total Estimated Tokens: 326
