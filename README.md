@@ -2,10 +2,6 @@
 
 This project showcases an intelligent agent workflow using Google's Gemini model and Playwright. The agent dynamically reads a task prompt, generates automation steps using LLM, executes the scenario in a browser, and generates a structured report.
 
-## 🙏 Credits
-
-Special thanks to **Anjali Jha** for creating the original sample code and contributions to the dynamic agent design.
-
 ## 📁 Project Structure
 
 - `agentcreation_with_tokens.py` – Main driver script that:
@@ -69,4 +65,8 @@ Go to https://google.com and search for "LangChain Playwright".
 ```
 
 ---
+
+## 🙏 Credits
+
+Special thanks to **Anjali Jha** for creating the original sample code and contributions to the dynamic agent design.
 
